@@ -1,0 +1,23 @@
+@layer default-kit-component {
+  .text {
+    color: var(--figma-color-text);
+    user-select: none;
+  }
+
+  .regular {
+    font-weight: 400;
+  }
+  .bold {
+    font-weight: 600;
+  }
+
+  .left {
+    text-align: left;
+  }
+  .center {
+    text-align: center;
+  }
+  .right {
+    text-align: right;
+  }
+}

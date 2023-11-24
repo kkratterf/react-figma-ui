@@ -1,0 +1,55 @@
+.dropdownContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.gridLayout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-small);
+}
+
+.label {
+  grid-column: span var(--inputConteiner-label-grid-width);
+  padding-left: var(--space-extra-small);
+  opacity: var(--input-label-opacity);
+}
+
+.dropdownMenuContainer {
+  flex: 1;
+  grid-column: span var(--inputConteiner-input-grid-width);
+  position: relative;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--space-extra-small);
+  width: 100%;
+  height: 30px;
+  border-radius: var(--border-radius-2);
+  border: 1px solid transparent;
+  padding: 0 var(--space-extra-small);
+  transition: all 0.1s ease-in-out;
+}
+
+.dropdown:hover,
+.dropdown:focus {
+  justify-content: space-between;
+  border-color: var(--figma-color-border);
+  outline: none;
+}
+
+.dropdownIcon {
+  fill: var(--figma-color-icon);
+}
+
+.overlayList {
+  position: absolute;
+  z-index: var(--z-index-2);
+  top: 0;
+  width: 100%;
+}
